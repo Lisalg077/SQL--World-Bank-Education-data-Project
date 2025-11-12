@@ -13,10 +13,10 @@ Both analyses are performed directly in **BigQuery**, and results are retrieved 
 
 
  Query 1: Government Expenditure on Education
-**Objective:**  
+**Objective:**    
 Identify which countries spend the largest fraction of GDP on education.
 
-**Approach:**
+**Approach:**  
 - Filter rows for the indicator `SE.XPD.TOTL.GD.ZS` (Government expenditure on education as % of GDP).  
 - Include data from **2010 to 2017**.  
 - Calculate **average spending per country** using `AVG(value)` and rename the column `avg_ed_spending_pct`.  
@@ -31,7 +31,7 @@ WHERE indicator_code = 'SE.XPD.TOTL.GD.ZS'
   AND year BETWEEN 2010 AND 2017
 GROUP BY country_name
 ORDER BY avg_ed_spending_pct DESC
-
+```
 
 ## Query 2: Indicators with Broad Global Coverage (2016)
 
@@ -55,7 +55,13 @@ FROM `bigquery-public-data.world_bank_intl_education.international_education`
 WHERE year = 2016
 GROUP BY indicator_name, indicator_code
 HAVING COUNT(1) >= 175
-ORDER BY num_rows DESC
+ORDER BY num_rows DESC;
+```
+
+
+
+
+
 
 
 
