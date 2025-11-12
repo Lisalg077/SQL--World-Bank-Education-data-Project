@@ -21,10 +21,6 @@ This project focuses on two main analyses:
 
 Both analyses are performed directly in **BigQuery**, and results are retrieved and displayed in Python (Jupyter notebook).
 
-Dataset: bigquery-public-data.world_bank_intl_education.international_education 
-Source: https://data.worldbank.org/
-BigQuery access: 
-
 ## Query 1: Government Expenditure on Education
 **Objective:**    
 Identify which countries spend the largest fraction of GDP on education.
