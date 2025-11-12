@@ -2,7 +2,8 @@
 SQL project analysing World Bank education spending data using BigQuery
 
 Project Overview
-The dataset contains **country-level education indicators** across multiple years, such as enrollment rates and government expenditure on education.  https://www.kaggle.com/code/buddhiniw/bigquery-world-bank-education-data
+The dataset contains **country-level education indicators** across multiple years, such as enrollment rates and government expenditure on education. 
+
 - **Dataset:** `bigquery-public-data.world_bank_intl_education.international_education`  
   - Hosted publicly on **Google BigQuery**.  
   - Includes country-level education indicators across multiple years.  
