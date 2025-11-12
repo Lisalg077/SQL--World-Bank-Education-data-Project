@@ -6,14 +6,8 @@ The dataset contains **country-level education indicators** across multiple year
 
 - **Dataset:** `bigquery-public-data.world_bank_intl_education.international_education`  
   - Hosted publicly on **Google BigQuery**.  
-  - Includes country-level education indicators across multiple years.  
+  - Includes country-level education indicators across multiple years.  https://www.kaggle.com/theworldbank/world-bank-intl-education
 
-- **Important Notes:**
-  1. **No raw dataset is included in this repository.**  
-     All queries are executed **directly on BigQuery**, so there’s no need to upload or store the data on GitHub.
-     
-  2. **BigQuery credentials are required to run the code.**  
-     Anyone who wants to execute the SQL queries via Python or Jupyter Notebook will need their own Google Cloud account and BigQuery credentials.
 Tools Used
 SQL (BigQuery Standard SQL)
 Python (BigQuery Client & Pandas)
