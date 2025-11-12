@@ -34,8 +34,7 @@ ORDER BY avg_ed_spending_pct DESC
 
 
 
-## Query 2: Indicators with Broad Global Coverage (2016)
-
+Query 2: Indicators with Broad Global Coverage (2016)
 **Objective:**  
 Determine which education indicators are **widely reported by countries** in 2016.  
 This helps identify metrics suitable for **cross-country comparison** and further analysis.
@@ -48,7 +47,7 @@ This helps identify metrics suitable for **cross-country comparison** and furthe
 - Order the results by `num_rows` descending to see the most widely reported indicators first.
 
 **SQL Query:**
-
+```sql
 SELECT indicator_code, 
        indicator_name, 
        COUNT(1) AS num_rows
@@ -58,7 +57,3 @@ GROUP BY indicator_name, indicator_code
 HAVING COUNT(1) >= 175
 ORDER BY num_rows DESC
  
-
-
-
----
