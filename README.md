@@ -33,7 +33,6 @@ GROUP BY country_name
 ORDER BY avg_ed_spending_pct DESC
 
 
-
 ## Query 2: Indicators with Broad Global Coverage (2016)
 
 **Objective:**  
@@ -57,3 +56,7 @@ WHERE year = 2016
 GROUP BY indicator_name, indicator_code
 HAVING COUNT(1) >= 175
 ORDER BY num_rows DESC
+
+
+
+
