@@ -12,7 +12,7 @@ This project focuses on two main analyses:
 Both analyses are performed directly in **BigQuery**, and results are retrieved and displayed in Python (Jupyter notebook).
 
 
- Query 1: Government Expenditure on Education
+## Query 1: Government Expenditure on Education
 **Objective:**    
 Identify which countries spend the largest fraction of GDP on education.
 
